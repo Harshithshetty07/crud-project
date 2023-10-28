@@ -33,26 +33,26 @@ const Update = (e) => {
 
 
   return(
-    <div className="d-flex vh-100 bg-primary justify-content-center align-items-center">
+    <div className="d-flex vh-100 bg-info shadow-lg  justify-content-center align-items-center">
     <div className="w-50 bg-white rounded p-3">
         <form onSubmit={Update}>
             <h2>Update User</h2>
             <div className="mb-2">
                 <label htmlFor="">Name</label>
                 <input type="text" placeholder="Enter Name" className="form-control"
-                 value={name} onChange={(e) => setName(e.target.value)}/>
+                 value={name} onChange={(e) => setName(e.target.value)} required/>
             </div>
             <div className="mb-2">
                 <label htmlFor="">Email</label>
-                <input type="emial" placeholder="Enter Email" className="form-control" 
-                value={email} onChange={(e) => setEmail(e.target.value)}/>
+                <input type="emial" placeholder="Enter Email" className="form-control"  
+                value={email} onChange={(e) => setEmail(e.target.value)} required/>
             </div>
             <div className="mb-2">
                 <label htmlFor="">Age</label>
                 <input type="text" placeholder="Enter Age" className="form-control"
-                 value={age} onChange={(e) => setAge(e.target.value)}/>
+                 value={age} onChange={(e) => setAge(e.target.value)} required/>
             </div>
-            <button className="btn btn-success">Update</button>
+            <button className="btn btn-primary">Update</button>
         </form>
     </div>
  
